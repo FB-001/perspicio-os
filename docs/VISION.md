@@ -4,6 +4,7 @@
 **Autor:** FB-001  
 **Base inicial:** Debian 13 “Trixie”  
 **Arquitetura inicial:** amd64
+**Ambiente gráfico inicial:** KDE Plasma
 
 ## Visão
 
@@ -55,18 +56,17 @@ A segurança deverá proteger o usuário sem retirar seu controle sobre o sistem
 
 A primeira versão será uma distribuição para computadores de 64 bits, baseada no Debian 13 “Trixie”. Inicialmente, o projeto utilizará os pacotes, repositórios e atualizações de segurança do Debian.
 
-A primeira versão deverá oferecer:
+- KDE Plasma como ambiente gráfico;
+- interface familiar para usuários vindos do Windows;
+- identidade visual própria, moderna e organizada;
 
-- imagem ISO inicializável;
-- modo Live para teste sem instalação;
-- instalação em português;
-- instalador gráfico;
-- ambiente gráfico simples e organizado;
-- conjunto reduzido de aplicativos essenciais;
-- ausência de conta on-line obrigatória;
-- configurações de privacidade aplicadas por padrão;
-- atualizações de segurança provenientes do Debian;
-- documentação simples para o usuário final.
+## Direção visual
+
+O Perspicio OS utilizará o KDE Plasma com uma configuração própria, preparada para funcionar bem desde o primeiro acesso.
+
+A interface deverá combinar a familiaridade do Windows com um acabamento visual moderno, inspirado na organização e elegância do Deepin, sem copiar sua identidade ou depender de seus componentes exclusivos.
+
+O sistema deverá oferecer painel inferior, menu de aplicativos, atalhos na área de trabalho, ícones modernos e efeitos visuais discretos. A personalização deverá preservar a liberdade do usuário sem exigir que ele configure o ambiente para obter uma experiência agradável.
 
 ## Fora do escopo inicial
 
