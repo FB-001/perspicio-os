@@ -19,7 +19,7 @@ Produzir uma imagem ISO Live e instalável do Perspicio OS, baseada no Debian 13
 - [x] criar o README;
 - [x] definir o KDE Plasma como ambiente gráfico;
 - [x] definir a licença do projeto;
-- [ ] definir a estrutura inicial do repositório.
+- [x] definir a estrutura inicial do repositório.
 
 ## Fase 2 — Ambiente de construção
 
