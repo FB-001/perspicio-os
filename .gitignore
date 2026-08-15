@@ -1,0 +1,21 @@
+# Diretórios temporários do live-build
+/.build/
+/binary/
+/cache/
+/chroot/
+/source/
+/.local/
+
+# Arquivos e marcadores gerados pelo live-build
+/.build
+/.stage/
+*.iso
+*.img
+*.zsync
+live-image-*
+build.log
+
+# Arquivos temporários de editores e sistema
+*~
+*.swp
+.DS_Store
