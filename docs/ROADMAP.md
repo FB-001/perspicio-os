@@ -27,7 +27,7 @@ Produzir uma imagem ISO Live e instalável do Perspicio OS, baseada no Debian 13
 - [x] instalar o `live-build`;
 - [x] criar a configuração mínima de construção;
 - [x] documentar os requisitos;
-- [ ] testar a geração de uma imagem sem personalizações.
+- [x] testar a geração de uma imagem sem personalizações.
 
 ## Fase 3 — Primeira ISO básica
 

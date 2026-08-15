@@ -24,3 +24,11 @@ build.log
 *~
 *.swp
 .DS_Store
+
+# Relatórios gerados durante a construção
+/binary.modified_timestamps
+/chroot.files
+/chroot.packages.*
+/*.contents
+/*.files
+/*.packages
