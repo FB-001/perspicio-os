@@ -1,0 +1,15 @@
+#!/bin/sh
+
+set -eu
+
+MARCADOR="${XDG_CONFIG_HOME:-$HOME/.config}/perspicio-wallpaper-aplicado"
+WALLPAPER="/usr/share/wallpapers/PerspicioOS/contents/images/wallpaper.png"
+
+[ -e "$MARCADOR" ] && exit 0
+[ -f "$WALLPAPER" ] || exit 0
+
+if command -v plasma-apply-wallpaperimage >/dev/null 2>&1; then
+    plasma-apply-wallpaperimage "$WALLPAPER"
+    mkdir -p "$(dirname "$MARCADOR")"
+    touch "$MARCADOR"
+fi

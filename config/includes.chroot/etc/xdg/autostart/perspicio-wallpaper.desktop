@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Wallpaper do Perspicio OS
+Comment=Aplica o wallpaper oficial na primeira inicialização
+Exec=/usr/local/bin/perspicio-aplica-wallpaper
+OnlyShowIn=KDE;
+NoDisplay=true
+X-KDE-autostart-phase=2

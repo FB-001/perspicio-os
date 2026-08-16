@@ -2,17 +2,21 @@
 
 set -eu
 
-for arquivo in \
-    /usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/config/main.xml \
-    /usr/share/plasma/plasmoids/org.kde.plasma.kicker/contents/config/main.xml \
-    /usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml
+GERENCIADOR="/usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/config/main.xml"
+KICKER="/usr/share/plasma/plasmoids/org.kde.plasma.kicker/contents/config/main.xml"
+KICKOFF="/usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml"
+
+if [ -f "$GERENCIADOR" ]; then
+    sed -i \
+        '/<entry name="launchers"/,/<\/entry>/ s#<default>.*</default>#<default></default>#' \
+        "$GERENCIADOR"
+fi
+
+for ARQUIVO in "$KICKER" "$KICKOFF"
 do
-    [ -f "$arquivo" ] || continue
+    [ -f "$ARQUIVO" ] || continue
 
     sed -i \
-        -e 's/,preferred:\/\/browser//g' \
-        -e 's/preferred:\/\/browser,//g' \
-        -e 's/,org\.kde\.kontact\.desktop//g' \
-        -e 's/org\.kde\.kontact\.desktop,//g' \
-        "$arquivo"
+        '/<entry name="favorites"/,/<\/entry>/ s#<default>.*</default>#<default></default>#' \
+        "$ARQUIVO"
 done

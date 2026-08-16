@@ -10,6 +10,6 @@ lb config noauto \
     --archive-areas "main contrib non-free-firmware" \
     --apt-recommends false \
     --debian-installer none \
-    --bootappend-live "boot=live components locales=pt_BR.UTF-8 keyboard-model=abnt2 keyboard-layouts=br timezone=America/Sao_Paulo" \
+    --bootappend-live "boot=live components locales=pt_BR.UTF-8 keyboard-model=abnt2 keyboard-layouts=br timezone=America/Sao_Paulo quiet splash loglevel=3 systemd.show_status=false rd.systemd.show_status=false vt.global_cursor_default=0" \
     --image-name "perspicio-os" \
     "${@}"

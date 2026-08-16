@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -eu
+
+ARQUIVO="/usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml"
+ICONE="file:///usr/share/pixmaps/perspicio-os.png"
+
+[ -f "$ARQUIVO" ] || exit 0
+
+sed -i \
+    "s#<default>start-here-kde-symbolic</default>#<default>${ICONE}</default>#" \
+    "$ARQUIVO"

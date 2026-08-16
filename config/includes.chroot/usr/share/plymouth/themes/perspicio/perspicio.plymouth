@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=Perspicio OS
+Description=Inicialização oficial do Perspicio OS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/perspicio
+ScriptFile=/usr/share/plymouth/themes/perspicio/perspicio.script
