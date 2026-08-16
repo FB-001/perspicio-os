@@ -31,11 +31,10 @@ Produzir uma imagem ISO Live e instalável do Perspicio OS, baseada no Debian 13
 
 ## Fase 3 — Primeira ISO básica
 
-- [ ] gerar uma ISO baseada no Debian 13;
-- [ ] incluir o KDE Plasma;
-- [ ] configurar português do Brasil;
-- [ ] habilitar o modo Live;
-- [ ] iniciar a ISO em uma máquina virtual;
+- [x] gerar uma ISO baseada no Debian 13;
+- [x] configurar português do Brasil;
+- [x] habilitar o modo Live;
+- [x] iniciar a ISO em uma máquina virtual;
 - [ ] verificar vídeo, rede, áudio e teclado;
 - [ ] registrar os problemas encontrados.
 

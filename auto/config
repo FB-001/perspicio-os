@@ -9,6 +9,6 @@ lb config noauto \
     --binary-images iso-hybrid \
     --archive-areas "main contrib non-free-firmware" \
     --debian-installer none \
-    --bootappend-live "boot=live components locales=pt_BR.UTF-8 keyboard-layouts=br timezone=America/Sao_Paulo" \
+    --bootappend-live "boot=live components locales=pt_BR.UTF-8 keyboard-model=abnt2 keyboard-layouts=br timezone=America/Sao_Paulo" \
     --image-name "perspicio-os" \
     "${@}"
