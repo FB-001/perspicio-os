@@ -3,3 +3,6 @@ console-setup-linux
 kbd
 keyboard-configuration
 locales
+user-setup
+sudo
+iproute2

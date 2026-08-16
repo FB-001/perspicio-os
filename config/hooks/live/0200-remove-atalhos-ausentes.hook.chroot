@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -eu
+
+for arquivo in \
+    /usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/config/main.xml \
+    /usr/share/plasma/plasmoids/org.kde.plasma.kicker/contents/config/main.xml \
+    /usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml
+do
+    [ -f "$arquivo" ] || continue
+
+    sed -i \
+        -e 's/,preferred:\/\/browser//g' \
+        -e 's/preferred:\/\/browser,//g' \
+        -e 's/,org\.kde\.kontact\.desktop//g' \
+        -e 's/org\.kde\.kontact\.desktop,//g' \
+        "$arquivo"
+done
